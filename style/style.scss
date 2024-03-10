@@ -5,7 +5,189 @@
 @import 'stylekit';
 
 body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
     background: #F3F3F4;
+}
+
+.page-shadow {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #10182880;
+}
+
+.page-shadow-active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 16%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 994px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include md {
+        top: 20%;
+    }
+
+    @include sm {
+        top: 18%;
+    }
+
+    &__close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+        background: url('/image/popup_close.svg') no-repeat center;
+        cursor: pointer;
+
+        &:hover {
+            background: url('/image/popup_close-hover.svg') no-repeat center;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        padding-left: 64px;
+        padding-right: 64px;
+        border-radius: 8px;
+        background: #FFFFFF;
+    }
+
+    .qr-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__image {
+        img {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .image-block {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+
+        @include sm {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .download-image {
+        img {
+            width: 140px;
+            height: 40px;
+        }
+    }
+}
+
+.popup-active {
+    z-index: 2;
+    display: block;
+}
+
+.item-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+
+        p {
+            color: var(--states-orange-hovered);
+        }
+
+        .item-link__icon-clip {
+            background: url(/image/item-link-icon-clip-active.svg) no-repeat center;
+        }
+
+        .item-link__icon-sheet {
+            background: url(/image/item-link-icon-sheet-active.svg) no-repeat center;
+        }
+
+        .item-link__icon-download {
+            background: url(/image/item-link-icon-download-active.svg) no-repeat center;
+        }
+
+        .item-link__icon-control {
+            background: url(/image/item-link-icon-control-active.svg) no-repeat center;
+        }
+    }
+
+    .link-orange {
+        color: #FF4F12;
+    }
+
+    &__icon-clip {
+        width: 24px;
+        height: 24px;
+        background: url(/image/item-link-icon-clip.svg) no-repeat center;
+    }
+
+    &__icon-sheet {
+        width: 24px;
+        height: 24px;
+        background: url(/image/item-link-icon-sheet.svg) no-repeat center;
+    }
+
+    &__icon-download {
+        width: 24px;
+        height: 24px;
+        background: url(/image/item-link-icon-download.svg) no-repeat center;
+    }
+
+    &__icon-control {
+        width: 24px;
+        height: 24px;
+        background: url(/image/item-link-icon-control.svg) no-repeat center;
+    }
+
+}
+
+.block-button {
+    // cursor: pointer;
+    .button {
+        width: fit-content;
+        padding: 14px 28px;
+        border-radius: 4px;
+        text-align: center;
+
+        @include sm {
+            width: 100%;
+        }
+    }
+
+    .orange {
+        color: #FFFFFF;
+        background: #FF4F12;
+
+        &:hover {
+            background: #D33706;
+        }
+    }
 }
 
 .header {
@@ -53,7 +235,7 @@ body {
 .wrapper {
     padding-left: 40px;
     padding-right: 40px;
-    border-radius: 8px;
+    // border-radius: 8px;
     background: #FFFFFF;
 
     @include md {
@@ -68,7 +250,7 @@ body {
         display: flex;
         gap: 45px;
 
-        @include md {
+        @include sm {
             justify-content: space-between;
         }
     }
@@ -76,27 +258,61 @@ body {
     &__rt-line {
         border-bottom: 2px solid #10182814;
     }
+
+    &__width {
+        width: 100%;
+        max-width: 640px;
+
+        @include sm {
+            max-width: unset;
+        }
+    }
 }
 
-.block-button {
-    .button {
-        width: fit-content;
-        padding: 14px 28px;
-        border-radius: 4px;
-        text-align: center;
+.control {
+
+    &__block {
+        display: flex;
+        gap: 20px;
 
         @include md {
-            width: 100%;
+            flex-direction: column;
         }
     }
 
-    .orange {
-        color: #FFFFFF;
-        background: #FF4F12;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+        flex: 1;
+        padding: 32px;
+        border-radius: 8px;
+        background: #F8F8F8;
 
-        &:hover {
-            background: #D33706;
+        @include md {
+            padding: 20px;
         }
+    }
+
+    &__card-page {}
+
+    &__card-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__card-main {}
+
+    &__icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    &__link,
+    &__desk {
+        padding-left: 72px;
     }
 }
 
@@ -154,51 +370,6 @@ body {
     .faq__subtitle-click {
         color: var(--states-orange-Pressed) !important;
     }
-}
-
-.item-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-
-    &:hover {
-
-        p {
-            color: var(--states-orange-hovered);
-        }
-
-        .item-link__icon-clip {
-            background: url(/image/item-link-icon-clip-active.svg) no-repeat center;
-        }
-
-        .item-link__icon-sheet {
-            background: url(/image/item-link-icon-sheet-active.svg) no-repeat center;
-        }
-
-        .item-link__icon-download {
-            background: url(/image/item-link-icon-download-active.svg) no-repeat center;
-        }
-    }
-
-    &__icon-clip {
-        width: 24px;
-        height: 24px;
-        background: url(/image/item-link-icon-clip.svg) no-repeat center;
-    }
-
-    &__icon-sheet {
-        width: 24px;
-        height: 24px;
-        background: url(/image/item-link-icon-sheet.svg) no-repeat center;
-    }
-
-    &__icon-download {
-        width: 24px;
-        height: 24px;
-        background: url(/image/item-link-icon-download.svg) no-repeat center;
-    }
-
 }
 
 .main-title {

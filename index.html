@@ -9,6 +9,39 @@
 </head>
 
 <body>
+    <div class="page-shadow"></div>
+
+    <div class="popup">
+        <div class="popup__wrapper sp-v-green">
+            <div class="popup__close"></div>
+            <h4 class="font-h4 sp-b-light-blue">Всё в одном приложении</h4>
+            <p class="font-t-m">Удобный личный кабинет для мобильных устройств. Вы можете управлять счетами и услугами, контролировать
+                расходы, безопасно пополнять баланс или найти ближайший офис на карте.</p>
+            <div class="qr-block sp-v-mint">
+                <div class="popup__image">
+                    <img src="/image/popup_qr_code.svg" alt="">
+                </div>
+                <p class="font-t-xs sp-t-blue">Отсканируйте QR-код и установите<br/>мобильный личный кабинет</p>
+            </div>
+            <div class="image-block">
+                <a href="">
+                    <div class="download-image">
+                        <img src="/image/qr-google.svg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="download-image">
+                        <img src="/image/qr-apple.svg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="download-image">
+                        <img src="/image/qr-huawei.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <header class="header">
         <div class="header__wrapper">
@@ -22,24 +55,26 @@
     <section class="check">
         <div class="container">
             <div class="wrapper sp-t-green">
-                <h3 class="font-h3 sp-b-red">Пополните счет, чтобы интернет стал доступен</h3>
-                <p class="font-t-l sp-b-red">На счете есть задолженность, поэтому сейчас недоступны все услуги.
-                    Пожалуйста, пополните его, чтобы дальше пользоваться услугами.</p>
-                <div class="check__data">
-                    <p class="font-t-l color--black-70">Ваш лицевой счет:</p>
-                    <p class="font-t-l">559011943080</p>
-                </div>
-                <div class="check__data sp-t-blue">
-                    <p class="font-t-l color--black-70">Сумма к оплате:</p>
-                    <p class="font-t-l">1 200 руб.</p>
-                </div>
-                <div class="sp-t-yellow sp-b-red">
-                    <div class="check__rt-line"></div>
-                </div>
-                <div class="block-button">
-                    <a href="">
-                        <p class="button font-t-m orange">Пополнить счет</p>
-                    </a>
+                <div class="check__width">
+                    <h3 class="font-h3 sp-b-red">Пополните счет, чтобы интернет стал доступен</h3>
+                    <p class="font-t-l sp-b-red">На счете есть задолженность, поэтому сейчас недоступны все услуги.
+                        Пожалуйста, пополните его, чтобы дальше пользоваться услугами.</p>
+                    <div class="check__data">
+                        <p class="font-t-l color--black-70">Ваш лицевой счет:</p>
+                        <p class="font-t-l">559011943080</p>
+                    </div>
+                    <div class="check__data sp-t-blue">
+                        <p class="font-t-l color--black-70">Сумма к оплате:</p>
+                        <p class="font-t-l">1 200 руб.</p>
+                    </div>
+                    <div class="sp-t-yellow sp-b-red">
+                        <div class="check__rt-line"></div>
+                    </div>
+                    <div class="block-button">
+                        <a href="">
+                            <p class="button font-t-m orange">Пополнить счет</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,176 +82,52 @@
 
     <section class="control">
         <div class="container">
-            <div class="wrapper sp-t-green">
+            <div class="wrapper sp-v-green">
                 <h3 class="font-h3 sp-b-red">Управлять услугами в личном кабинете</h3>
-            </div>
-        </div>
-    </section>
+                <div class="control__block">
 
-
-
-
-
-    <div class="main-title">
-        <div class="container">
-            <h2 class="font-h2 sp-t-green sp-b-purple font-h2--position">Сервисная страница</h2>
-        </div>
-    </div>
-
-    <section class="resources sp-b-yellow">
-        <div class="container">
-            <div class="wrapper sp-v-purple">
-                <h4 class="font-h4 sp-b-mint">Ресурсы</h4>
-
-                <div class="sp-b-light-blue">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-clip"></div>
-                        <p class="font-t-m">XML список Расширений</p>
-                    </a>
-                </div>
-
-                <div class="">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-clip"></div>
-                        <p class="font-t-m">Инструкция на сайте Яндекса</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="faq sp-b-yellow">
-        <div class="container">
-            <div class="wrapper sp-v-purple">
-                <h4 class="font-h4 sp-b-mint">Часто задаваемые вопросы</h4>
-
-                <div class="faq__item" data-state="close">
-                    <div class="faq__icon"></div>
-                    <div class="faq__info">
-                        <p class="faq__subtitle font-h-l">Как посмотреть идентификаторы расширений?</p>
-                        <div class="faq__description">
-                            <p class="font-t-m color--black-70 sp-t-yellow">Откройте в Браузере страницу
-                                browser://extensions. В правом верхнем углу включите опцию Режим разработчика. Под
-                                расширением нажмите Сведения. Идентификатор указан в одноименном поле.</p>
+                    <div class="control__card">
+                        <div class="control__card-page">
+                            <div class="control__card-header">
+                                <div class="control__icon">
+                                    <img src="/image/control_icon_lk.svg" alt="">
+                                </div>
+                                <p class="font-h4">Через Личный кабинет</p>
+                            </div>
+                            <p class="control__desk font-t-m sp-t-light-blue">Для регистрации в личном кабинете
+                                необходимо заполнить все
+                                поля, следуя подсказкам</p>
                         </div>
+                        <a class="control__link item-link" href="/" target="_blank">
+                            <div class="item-link__icon-control"></div>
+                            <p class="link-orange font-t-m">Перейти в Личный кабинет</p>
+                        </a>
                     </div>
-                </div>
 
-                <div class="faq__item" data-state="close">
-                    <div class="faq__icon"></div>
-                    <div class="faq__info">
-                        <p class="faq__subtitle font-h-l">Как посмотреть идентификаторы расширений?</p>
-                        <div class="faq__description">
-                            <p class="font-t-m color--black-70 sp-t-yellow">Откройте в Браузере страницу
-                                browser://extensions. В правом верхнем углу включите опцию Режим разработчика. Под
-                                расширением нажмите Сведения. Идентификатор указан в одноименном поле.</p>
+                    <div class="control__card">
+                        <div class="control__card-page">
+                            <div class="control__card-header">
+                                <div class="control__icon">
+                                    <img src="/image/control_icon_mobile.svg" alt="">
+                                </div>
+                                <p class="font-h4">Мобильное приложение</p>
+                            </div>
+                            <p class="control__desk font-t-m sp-t-light-blue">Удобный личный кабинет для мобильных
+                                устройств. Вы можете управлять
+                                счетами и услугами, контролировать расходы, безопасно пополнять баланс</p>
                         </div>
+                        <a class="control__link item-link" href="/" target="_blank">
+                            <div class="item-link__icon-control"></div>
+                            <p class="link-orange font-t-m">Перейти в мобильное приложение</p>
+                        </a>
                     </div>
                 </div>
-
-                <div class="faq__item" data-state="close">
-                    <div class="faq__icon"></div>
-                    <div class="faq__info">
-                        <p class="faq__subtitle font-h-l">Lorem ipsum dolor sit?</p>
-                        <div class="faq__description">
-                            <p class="font-t-m color--black-70 sp-t-yellow">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam debitis corporis veniam recusandae at earum? Aperiam inventore
-                                dolorem natus similique?</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section class="plugin sp-b-yellow">
-        <div class="container">
-            <div class="wrapper sp-v-purple">
-                <h4 class="font-h4 sp-b-mint">Плагин Blitz Smart Card Plugin</h4>
-
-                <div class="sp-b-light-blue">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-clip"></div>
-                        <p class="font-t-m">Адаптер плагина Blitz Smart Card Plugin</p>
-                    </a>
-                </div>
-
-                <div class="sp-b-light-blue">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-clip"></div>
-                        <p class="font-t-m">Verification File .JSON</p>
-                    </a>
-                </div>
-
-                <div class="sp-b-mint">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-clip"></div>
-                        <p class="font-t-m">Update XML link</p>
-                    </a>
-                </div>
-
-                <div class="sp-b-light-blue">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-sheet"></div>
-                        <p class="font-t-m">ID Расширения</p>
-                    </a>
-                </div>
-
-                <div class="sp-b-mint">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-sheet"></div>
-                        <p class="font-t-m">Страница в магазине приложений Google</p>
-                    </a>
-                </div>
-
-                <div class="information">
-                    <div class="information__icon"></div>
-                    <div class="information__description">
-                        <p class="font-h-m sp-b-dark-purple">Расширение позволяет использовать КриптоПро ЭЦП Browser
-                            plug-in в браузере</p>
-                        <p class="font-t-m color--black-70">Позволяет использовать плагин Blitz Smart Card Plugin для
-                            электронных подписей Специальное расширение Адаптер плагина Blitz требуется для корректной
-                            работы плагина Blitz Smart Card Plugin в браузере Google Chrome. Плагин Blitz Smart Card
-                            Plugin совместим с решениями российских производителей ключей электронной подписи и может
-                            применяться в информационных системах, в которых используются цифровые сертификаты и
-                            инфраструктура PKI.</p>
-
-                        <p class="font-t-m color--black-70 sp-b-dark-purple">
-                            Плагин позволяет использовать электронные подписи различных типов, в том числе:</p>
-                        <ul class="font-t-m color--black-70">
-                            <li>— JaCarta PKI / ГОСТ от компании Аладдин Р.Д.;</li>
-                            <li>— eToken ГОСТ от компании Аладдин Р.Д.;</li>
-                            <li>— семейство ключей Рутокен ЭЦП от компании «Актив»;</li>
-                            <li>— ключи на основе КриптоПро CSP 3.9 и 4.0;</li>
-                            <li>— ключи на основе Signal-COM CSP 3.0;</li>
-                            <li>— ключи ESMART от компании ISBC;</li>
-                            <li>— SafeNet eToken. Точный перечень устройств зависит от операционной системы. Подробная
-                                информация о плагине размещена на странице продукта.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="distributions sp-b-green">
-        <div class="container">
-            <div class="wrapper sp-v-purple">
-                <h4 class="font-h4 sp-b-mint">Дистрибутивы Ассистент</h4>
-
-                <div class="sp-b-light-blue">
-                    <a class="item-link" href="/" target="_blank">
-                        <div class="item-link__icon-download"></div>
-                        <p class="font-t-m">Дистрибутив Ассистент 5.5. ПАО «Ростелеком» — Default Group</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <!-- Отступ -->
+    <div class="sp-t-orange"></div>
 
     <footer class="footer">
         <div class="footer__wrapper">

@@ -131,6 +131,15 @@ html {
     color: var(--object-day-black-100);
 }
 
+.font-t-xs {
+    font-family: "Rostelecom Basis";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--object-day-black-100);
+}
+
 // Цвета
 
 .color--black-100 {
@@ -156,6 +165,47 @@ html {
 .link--orange {
     color: var(--states-orange-hovered);
     cursor: pointer;
+}
+
+
+// sp-green
+.sp-t-orange {
+    padding-top: 80px;
+
+    @include md {
+        padding-top: 64px;
+    }
+
+    @include sm {
+        padding-top: 40px;
+    }
+}
+
+.sp-b-orange {
+    padding-bottom: 80px;
+
+    @include md {
+        padding-bottom: 64px;
+    }
+
+    @include sm {
+        padding-bottom: 40px;
+    }
+}
+
+.sp-v-orange {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include md {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    @include sm {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 // sp-dark-purple
