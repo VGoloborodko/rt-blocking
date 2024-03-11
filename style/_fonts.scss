@@ -27,3 +27,13 @@
         url(../fonts/RostelecomBasis-Regular.woff),
         url(../fonts/RostelecomBasis-Regular.otf),
 }
+
+@font-face {
+    font-family: 'Rostelecom Basis';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Rostelecom Basis'),
+        url(../fonts/RostelecomBasis-Light.woff2),
+        url(../fonts/RostelecomBasis-Light.woff),
+        url(../fonts/RostelecomBasis-Light.otf),
+}

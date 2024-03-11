@@ -503,3 +503,11 @@ html {
         padding-bottom: 8px;
     }
 }
+
+.rt-link--orange {
+    color: #FF4F12;
+
+    &:hover {
+        color: #D33706;
+    }
+}

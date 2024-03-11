@@ -18,7 +18,7 @@
 //     })
 // })
 
-const btn = document.querySelector('.button');
+const btn = document.querySelector('.button-mobile');
 const shadow = document.querySelector('.page-shadow');
 const popup = document.querySelector('.popup');
 const btnClose = document.querySelector('.popup__close');
